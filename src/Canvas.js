@@ -269,6 +269,11 @@ const Canvas = () => {
                 <button type="button" onClick={copyToClipboard}>
                   Copy To Clipboard
                 </button>
+                <br />
+                <br />
+                <a href={srcImage} target="__blank">
+                  Open Image In New Tab
+                </a>
               </div>
               <h2>Preview</h2>
               {ext === "png" ? (
