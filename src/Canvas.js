@@ -204,7 +204,7 @@ const Canvas = () => {
         // image CDN returns a string
         res = await imageAPI.post("upload-file", form);
 
-        // set string to state
+        // set filepath string to state
         setImageFile({ filepath: res.data.filepath, ext });
       } catch (err) {
         // set upload errors to state
