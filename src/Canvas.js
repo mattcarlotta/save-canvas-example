@@ -279,16 +279,14 @@ const Canvas = () => {
               {ext === "png" ? (
                 <img src={srcImage} alt="preview" />
               ) : (
-                <div className="pdf-container">
-                  <embed
-                    src={srcImage}
-                    type="application/pdf"
-                    frameBorder="0"
-                    scrolling="auto"
-                    height="300px"
-                    width="300px"
-                  ></embed>
-                </div>
+                <embed
+                  src={srcImage}
+                  type="application/pdf"
+                  frameBorder="0"
+                  scrolling="auto"
+                  height="300px"
+                  width="300px"
+                />
               )}
             </>
           )}
